@@ -3,8 +3,8 @@ rvm:
   - "1.9.3"
 # 2.1 is compatible with ZenTest4.9.4 in rag/Gemfile.lock
 before_install:
-  gem install cucumber
-  gem install rspec
+  - gem install cucumber
+  - gem install rspec
 #  - gem update --system 2.2.0
 #  - gem --version
 # bundler_args: ''
