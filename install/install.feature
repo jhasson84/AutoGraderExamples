@@ -15,7 +15,7 @@ Feature: Installation of dependencies
     And I change to branch "master"
     And I install the AutoGrader gems
     # Debug:
-    #Then I should see the execution results
+    Then I should see the execution results
     #And I should see 74 gems
     And I should see that there are no errors
 
