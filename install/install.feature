@@ -12,7 +12,7 @@ Feature: Installation of dependencies
   Scenario: Install or check AutoGraders
     Given that I am in the project root directory "AutoGraderExamples"
     When I install or check "saasbook/rag" as "rag"
-    And I change to branch "master"
+    And I change to branch "develop"
     And I install the AutoGrader gems
     # Debug:
     Then I should see the execution results
@@ -22,5 +22,5 @@ Feature: Installation of dependencies
   Scenario: Verify correct version of AutoGraders
     Given I go to the AutoGrader directory "rag"
     And it has an origin of "saasbook/rag"
-    When I fetch the latest on origin branch "master"
+    When I fetch the latest on origin branch "develop"
     Then I should see no difference
