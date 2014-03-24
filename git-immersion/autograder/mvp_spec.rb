@@ -6,7 +6,7 @@ describe "Github" do
     (Octokit.repository? ENV['GITHUB_USERNAME']+'/gitimmersion').should be_true
   end
 
-   it "should have at least 3 recent commits in name of user  [10 points]" do
+   it "should have at least 3 recent commits in name of #{ENV['GITHUB_USERNAME']+'/gitimmersion'}  [10 points]" do
       repo_name = ENV['GITHUB_USERNAME']+'/gitimmersion'
       commits = Octokit.commits_since(repo_name,'2014-01-01')
       commits.count.should be > 3
@@ -28,13 +28,11 @@ describe "Github" do
    end
 
   #it 'should not have any forks  [10 points]' do
-      #repo_name = ENV['GITHUB_USERNAME']+'/gitimmersion'
-      
+      #repo_name = ENV['GITHUB_USERNAME']+'/gitimmersion'      
       #forks = Octokit.forks(repo_name)      
       #forks[0].fork.should be 'false' 
-      #forks.each{|c| c.count.should be = 'nil'}
-    
- # end  
+      #forks.each{|c| c.count.should be = 'nil'}    
+  #end  
 
   #it 'should have at least merge commit [5 points]' do
     #repo_name = ENV['GITHUB_USERNAME']+'/gitimmersion'
