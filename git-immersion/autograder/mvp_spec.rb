@@ -28,13 +28,11 @@ describe "Github" do
    end
 
   #it 'should not have any forks  [10 points]' do
-      #repo_name = ENV['GITHUB_USERNAME']+'/gitimmersion'
-      
+      #repo_name = ENV['GITHUB_USERNAME']+'/gitimmersion'      
       #forks = Octokit.forks(repo_name)      
       #forks[0].fork.should be 'false' 
-      #forks.each{|c| c.count.should be = 'nil'}
-    
- # end  
+      #forks.each{|c| c.count.should be = 'nil'}    
+  #end  
 
   #it 'should have at least merge commit [5 points]' do
     #repo_name = ENV['GITHUB_USERNAME']+'/gitimmersion'
