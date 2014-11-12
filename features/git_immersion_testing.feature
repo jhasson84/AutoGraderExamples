@@ -11,7 +11,7 @@ Feature: Testing instructor created homeworks
     And I should see the execution results with <test_title>
   Examples:
     | test_title        | test_subject           | spec                   | expected_result       |
-    | specs vs solution | solutions/RichardVSaasbook.txt | autograder/mvp_spec.rb | Score out of 10: 100 |
+    | specs vs solution | solutions/RichardVSaasbook.txt | autograder/mvp_spec.rb | Score out of 100: 10 |
     | specs vs solution | solutions/jhasson84.txt  | autograder/mvp_spec.rb | Score out of 100: 100|
 
     # TODO ideally we should be stubbing the octokit gem ... use https://github.com/vcr/vcr ?
